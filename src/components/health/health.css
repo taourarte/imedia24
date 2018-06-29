@@ -1,0 +1,58 @@
+.pull-left{
+    float: left;
+}
+
+.clearfix {
+    clear: both;
+}
+  
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.health h2{
+    font-family: "Helvetica";
+    font-size: 22px;
+}
+
+.health p{
+    font-family: "Helvetica";
+    font-size: 14px;
+    color: #bebebe;
+}
+
+.content input{
+    margin:0;padding:0;
+    -webkit-appearance:none;
+       -moz-appearance:none;
+            appearance:none;
+}
+span{background-image:url(http://i.imgur.com/lXzJ1eB.png);}
+.maleImagele{background-image:url(http://i.imgur.com/SJbRQF7.png);}
+.box{
+    padding: 20px 0;
+    border-bottom: 2px solid #e4e4e4;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.box h3{
+    padding-right: 100px;
+    color: #bebebe;
+    font-family: "Helvetica";
+    text-align: left;
+    width: 20%;
+}
+
+.box .content{
+    padding-top: 20px;
+}
+
+.health{
+    margin: 0 auto;
+    text-align: center;
+}
