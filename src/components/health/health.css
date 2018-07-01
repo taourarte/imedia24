@@ -17,18 +17,20 @@
 .health h2{
     font-family: "Helvetica";
     font-size: 22px;
+    margin: 8px 0;
 }
 
 .health> p{
     padding-right: 56px;
     margin-bottom: 20px;
-
     font-family: "Helvetica";
     font-size: 14px;
     color: #bebebe;
 }
-
-
+.health-up {
+    padding: 60px 0 20px;
+    text-align: center;
+}
 .gender> input[type="radio"]{
     margin:0;
     padding:0;
@@ -65,38 +67,70 @@
 
 .health{
     margin: 0 auto;
-    text-align: center;
+}
+label.container p {
+    margin: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.c-female{
+    
+}
+.c-male{
+
+}
+.f-h{
+    margin: 25px 0;
+}
+.cc-selector{
+    display: -webkit-inline-box;
 }
 .cc-selector input[type="radio"]{
-    margin:0;padding:0;
-    -webkit-appearance:none;
-       -moz-appearance:none;
-            appearance:none;
+    margin: auto;
+    position: relative;
+    height: 80px;
+    width: 80px;
+    z-index: 1;
+    left: 80px;
+    padding: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 .Female{background-image:url("../../imgs/person-female.png");}
 .Male{background-image:url("../../imgs/user.png");}
 .cc-selector p{
-margin-top: 20px;
-display: inline;
+    display: inline;
+    height: 100%;
+    position: relative;
+    bottom: 30px;
+    left: 20px;
 }
-.cc-selector input:active +.drinkcard-cc{opacity: .9;}
+.cc-selector input:active +.drinkcard-cc{
+    opacity: .9;
+}
 .cc-selector input:checked +.drinkcard-cc{
     -webkit-filter: none;
        -moz-filter: none;
             filter: none;
 }
 .drinkcard-cc{    
-    cursor:pointer;
-    background-size:contain;
-    background-repeat:no-repeat;
-    display:inline-block;
-    width:160px;height:70px;
+    cursor: pointer;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: solid 1px #cecece;
+    display: inline-block;
+    background-color: azure;
+    width: 80px;
+    border-radius: 50%;
+    height: 80px;
     -webkit-transition: all 100ms ease-in;
-       -moz-transition: all 100ms ease-in;
-            transition: all 100ms ease-in;
+    -o-transition: all 100ms ease-in;
+    transition: all 100ms ease-in;
     -webkit-filter: brightness(1.8) grayscale(1) opacity(.7);
-       -moz-filter: brightness(1.8) grayscale(1) opacity(.7);
-            filter: brightness(1.8) grayscale(1) opacity(.7);
+    -moz-filter: brightness(1.8) grayscale(1) opacity(.7);
+    filter: brightness(1.8) grayscale(1) opacity(.7);
 }
 .drinkcard-cc:hover{
     -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
@@ -112,10 +146,8 @@ p{margin-bottom:.3em;}
 /* The container */
 
 .container {
-    margin-left: 10px;
     position: relative;
-    padding-left: 35px;
-    margin-bottom: 12px;
+    display: inline-flex;
     cursor: pointer;
     font-size: 22px;
     -webkit-user-select: none;
@@ -144,7 +176,7 @@ p{margin-bottom:.3em;}
 /* Hide the browser's default checkbox */
 .diabetes input,
 .container input {
-    position: absolute;
+    position: relative;
     opacity: 0;
     cursor: pointer;
     z-index: 2;
@@ -155,8 +187,8 @@ p{margin-bottom:.3em;}
     position: absolute;
     top: 0;
     left: 0;
-    height: 25px;
-    width: 25px;
+    height: 40px;
+    width: 40px;
     background-color: #eee;
 }
 
@@ -193,10 +225,11 @@ p{margin-bottom:.3em;}
 
 /* Style the checkmark/indicator */
 .container .checkmark:after {
-    left: 9px;
-    top: 5px;
-    width: 5px;
-    height: 10px;
+    margin: auto;
+    top: 8px;
+    width: 8px;
+    position: relative;
+    height: 16px;
     border: solid white;
     border-width: 0 3px 3px 0;
     -webkit-transform: rotate(45deg);
@@ -246,3 +279,28 @@ p{margin-bottom:.3em;}
 
 /*
 end styling activity level*/
+
+.test p {
+    height: 100%;
+    position: relative;
+    bottom: 30px;
+    left: 0;
+}
+label.c-couch h6,label.c-byke h6 {
+    margin: 0 0 34px;
+    font-size: 18px;
+}
+.test input[type="radio"]{
+    margin: auto;
+    position: relative;
+    height: 80px;
+    width: auto;
+    z-index: 1;
+    padding: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.activity-left .checkmark{
+    top: -46px;
+}

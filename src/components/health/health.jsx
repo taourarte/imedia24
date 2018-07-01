@@ -1,9 +1,8 @@
 import React, { Component } from 'react'
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 const Title = styled.h2`
     font-size: 1.5em;
-    text-align: center;
     color: dark;
 `;
 
@@ -16,6 +15,7 @@ const Desc = styled.p`
     font-size: 1.5em;
     text-align: center;
     color: grey;
+    margin:8px 0;
 `;
 export default class Health extends Component {
 
@@ -30,12 +30,19 @@ export default class Health extends Component {
                 <Category className="pull-left">YOUR GENDER</Category>
                 <div className="pull-left content gender">
                     <div class="cc-selector">
-                        <input id="Female" type="radio" name="Gender" value="Female"checked />
-                        <span class="drinkcard-cc Female" for="Female"></span> 
-                        <p>Female</p>                       
-                        <input id="Male" type="radio" name="Gender" value="Male" />
-                        <label class="drinkcard-cc Male" for="Male"></label>
-                        <p>Male</p>
+
+                        <div className="c-female">
+                            <input id="Female" type="radio" name="Gender" value="Female"checked />
+                            <span class="drinkcard-cc Female" for="Female"></span> 
+                            <p>Female</p>
+                        </div>
+
+                        <div className="c-male">
+                            <input id="Male" type="radio" name="Gender" value="Male" />
+                            <span class="drinkcard-cc Male" for="Male"></span>
+                            <p>Male</p>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -52,17 +59,20 @@ export default class Health extends Component {
                 <div className="pull-left content">
                     <Title>Anyone in your family have prediabetes?</Title>
                     <Desc>check all that aply.and if you would rather not say,that's okay</Desc>
+
+                <div className="f-h">
                     <label class="container">
                         <input type="checkbox" checked="checked"/>
                         <span class="checkmark"></span>
-                        Parent
+                        <p>Parent</p>
                     </label>
                     <label class="container">
                         <input type="checkbox" />
                         <span class="checkmark"></span>
-                        Sibling
+                        <p>Sibling</p>
                     </label>
-                   
+                </div>
+
                 </div>
             </div>
             <div className="box clearfix">
@@ -70,19 +80,30 @@ export default class Health extends Component {
                 <div className="pull-left content">
                    <Title>How active are you on a weekly basis?</Title>
                    <div className="activity-left">
-                   <label class="diabetes">
+                   <label class="c-couch diabetes">
+
                         <input type="radio" name="activity"  />
                         <span class="checkmark"></span>
-                        <div class="cc-selector test">
+
+                    <div class="cc-selector test">
                         <input id="else" type="radio" name="active" value="notVeryActive"  />
                         <label class="drinkcard-cc Couch" for="else"></label>
-                    </div>                    </label>
-                    <label class="diabetes">
+                        <h6>Not very active</h6>
+                        <p>less than 60 minutes of physical activity per week</p>
+                    </div>                    
+                    </label>
+
+                    <label class="c-byke diabetes">
+
                         <input type="radio" name="activity" checked />
                         <span class="checkmark"></span>
-                        <div class="cc-selector test">
+
+                    <div class="cc-selector test">
                         <input id="Byke" type="radio" name="active" value="active" checked />
                         <label class="drinkcard-cc Byke" for="Byke"></label>
+                        
+                        <h6>active</h6>
+                        <p>60+ minutes of physical activity per week</p>
                     </div>
                     </label>
                    

@@ -1,9 +1,53 @@
-div{
-    text-align: center
+#root{
+    font-family: 'Roboto', sans-serif;
+}
+.header{
+    display: inline-block;
+    width: 70%;
+    height: 60px;
+    text-align: start;
+}
+.header .logo{
+    float: left;
+    padding: 5px 50px;
+    display: flex;
+    line-height: 2.5;
+}
+.preventimg{
+    width: 50px;
+    background: url("../../imgs/prev.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.header .login{
+    float: right;
+    padding: 5px;
+    line-height: 2.5;
+}
+.login span{
+    color: blue;
+    font-weight: bold;
+}
+.check{
+    width: 20px;
+    background-image: url("../../imgs/checked.png");
+}
+.n-check{
+    width: 20px;
+    background-image: url("../../imgs/checked.png");
+}
+.Navbar li i{
+    padding: 0px;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+    left: 40px;
+    background-repeat: no-repeat;
 }
 ul{
     list-style-type: none;   
-    background-color:#b5b7b4;
+    background-color:#F3F5F8;
     height: 50px;
     width: 100%;
     margin-bottom: 10px;
@@ -14,31 +58,29 @@ ul>li:first-of-type{
     margin-left: 100px;
     
 }
- i{
-     background-image:url("../../imgs/checked.png");
-    height: 30px;}
-
-
 
 ul> li{
-    border: 1px solid #b5b7b4;
+    border: 1px solid #eaeaea;
     float: left;
-    background-color:#ffffff;
+    display: flex;
+    background-color: #ffffff;
     width: 15%;
     height: 50px;
 }
 ul>li:last-of-type{
     width: 40%;
-    background-color:#b5b7b4;
+    background-color:#F3F5F8;
 }
 ul>li:nth-of-type(3){
     background: #2196F3;
     color: #000 !important;}
 li a {
-    
+    position: relative;
+    left: 35px;
     display: block;
     text-align: center;
-    padding: 14px 16px;
+    font-size: 12px;
+    padding: 20px 16px;
     text-decoration: none;
     color: #000 !important;
 
