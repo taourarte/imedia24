@@ -75,7 +75,10 @@
 }
 .Female{background-image:url("../../imgs/person-female.png");}
 .Male{background-image:url("../../imgs/user.png");}
-
+.cc-selector p{
+margin-top: 20px;
+display: inline;
+}
 .cc-selector input:active +.drinkcard-cc{opacity: .9;}
 .cc-selector input:checked +.drinkcard-cc{
     -webkit-filter: none;
@@ -222,8 +225,7 @@ p{margin-bottom:.3em;}
 .weight
 {
     /*background-color: #2196F3;*/
-    width: 40px;
-    
+    width: 60px;    
     margin-left: 10px;
     height: 40px;
 }

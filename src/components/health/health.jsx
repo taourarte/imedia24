@@ -31,9 +31,11 @@ export default class Health extends Component {
                 <div className="pull-left content gender">
                     <div class="cc-selector">
                         <input id="Female" type="radio" name="Gender" value="Female"checked />
-                        <label class="drinkcard-cc Female" for="Female">Female</label>                        
+                        <span class="drinkcard-cc Female" for="Female"></span> 
+                        <p>Female</p>                       
                         <input id="Male" type="radio" name="Gender" value="Male" />
-                        <label class="drinkcard-cc Male" for="Male">Male</label>
+                        <label class="drinkcard-cc Male" for="Male"></label>
+                        <p>Male</p>
                     </div>
                 </div>
             </div>

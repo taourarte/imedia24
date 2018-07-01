@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './components/health/health.css';
-import Health from './components/health';
+import Layout from './components/Layout/layout';
 //import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<Health />, document.getElementById('root'));
+ReactDOM.render(<Layout />, document.getElementById('root'));
 //registerServiceWorker();
